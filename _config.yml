@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: ZhangChao
+subtitle: SmallPotatoZC
 description:
-author: John Doe
+author: ZhangChao
 language:
 timezone:
 
@@ -77,4 +77,7 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:SmallPotatoZc/SmallPotatoZc.git
+  message: update
+#  extend_dirs: .deploy
