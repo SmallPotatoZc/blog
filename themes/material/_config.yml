@@ -1,13 +1,9 @@
-# ---------------------------------------------------------------
-# Site Information Settings
-# ---------------------------------------------------------------
-
 # Head info
 head:
     favicon: "/img/chao.ico"
     high_res_favicon: "/img/chao.ico"
     apple_touch_icon: "/img/chao.ico"
-    keywords: "ZhangChao, zhangchao"
+    keywords: "ZhangChao,张超,前端,SmallPotato"
     site_verification:
         google:
         baidu:
