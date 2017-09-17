@@ -5,8 +5,7 @@ head:
     apple_touch_icon: "/img/chao.ico"
     keywords: "ZhangChao,张超,前端,SmallPotato"
     site_verification:
-        google:
-        baidu:
+        google: "googlec68a1766e99fff52"
 
     # Enable generate structured-data as JSON+LD for SEO or not.
     #    Set as 'false' if it cause some wrong when `hexo g`.
@@ -14,7 +13,7 @@ head:
 
 # Jump Links Settings
 url:
-    rss:
+    rss: "http://www.newsisfree.com/pages/?welcome,1505643757"
     daily_pic: "#"
     logo: "#"
 
@@ -23,13 +22,13 @@ url:
 # Style Settings
 # ---------------------------------------------------------------
 
-# Schemes
+# Schemes - Nexus Paradox Isolation
 scheme: Paradox
 #scheme: Isolation
 
 # UI & UX: slogan, color, effect
 uiux:
-    slogan: "Hi, nice to meet you"
+    slogan: "欢迎来到小人物(张超)的空间"
     theme_color: "#0097A7"
     theme_sub_color: "#00838F"
     hyperlink_color: "#00838F"
@@ -153,7 +152,7 @@ toc:
 
 # SNS Menu
 sns:
-    email: youremail@email.com
+    email: "92.zhangchao@gmail.com"
     facebook: "https://www.facebook.com/facebook"
     twitter: "https://twitter.com/twitter"
     googleplus: "https://www.google.com/"
