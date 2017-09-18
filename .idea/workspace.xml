@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1ee0694f-a5d7-4b85-a55a-2ef432675e86" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deploy" afterPath="$PROJECT_DIR$/.deploy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/material/_config.yml" afterPath="$PROJECT_DIR$/themes/material/_config.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,8 +53,8 @@
       <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/material/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-225">
-              <caret line="154" column="34" lean-forward="false" selection-start-line="154" selection-start-column="34" selection-end-line="154" selection-end-column="34" />
+            <state relative-caret-position="360">
+              <caret line="193" column="18" lean-forward="true" selection-start-line="193" selection-start-column="18" selection-end-line="194" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -273,12 +271,12 @@
       <workItem from="1505393825793" duration="2124000" />
       <workItem from="1505396753543" duration="3463000" />
       <workItem from="1505545730824" duration="3001000" />
-      <workItem from="1505624043632" duration="7233000" />
+      <workItem from="1505624043632" duration="7295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15821000" />
+    <option name="totallyTimeSpent" value="15883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="593" y="23" width="1330" height="976" extended-state="0" />
@@ -493,8 +491,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/material/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="154" column="34" lean-forward="false" selection-start-line="154" selection-start-column="34" selection-end-line="154" selection-end-column="34" />
+        <state relative-caret-position="360">
+          <caret line="193" column="18" lean-forward="true" selection-start-line="193" selection-start-column="18" selection-end-line="194" selection-end-column="32" />
           <folding />
         </state>
       </provider>
