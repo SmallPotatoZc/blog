@@ -11,9 +11,9 @@ head:
     #    Set as 'false' if it cause some wrong when `hexo g`.
     structured_data: true
 
-# Jump Links Settings
+# Jump Links Settingshttp://www.newsisfree.com/pages/?welcome,1505643757
 url:
-    rss: "http://www.newsisfree.com/pages/?welcome,1505643757"
+    rss: "#"
     daily_pic: "#"
     logo: "#"
 
