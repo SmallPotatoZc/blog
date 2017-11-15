@@ -142,8 +142,14 @@ license:
 # ---------------------------------------------------------------
 # Menu Settings
 # ---------------------------------------------------------------
-
 # TOC Button
+menu:
+  home: /
+  archives: /archives
+  categories: /categories
+  tags: /tags
+  commonweal: /404.html
+  about: /about
 
 toc:
 #   use: choose whether the line_number of toc will show or not.
@@ -195,10 +201,10 @@ sidebar:
         icon: chrome_reader_mode
         divider: false
     pages:
-        #About:
-            #link: "/about"
-            #icon: person
-            #divider: false
+        日程表:
+            link: "/progress"
+            icon: date_range
+            divider: false
     article_num:
         use: false
         divider: false
