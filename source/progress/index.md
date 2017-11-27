@@ -38,8 +38,30 @@ date: 2017-11-14 11:09:59
       <ol>
         <li>班牌安装工具添加校时功能和查看版本信息（包含apk和应用）</li>
         <li>测试新版apk的音量调节功能</li>
+        <li>projeceSchool中的图片懒加载及占位显示</li>
       </ol>
     </td>
-    <td>本周会更新</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>10-20—11-26</td>
+    <td>
+      <ol>
+        <li>优化工具校时的功能(未完成)</li>
+        <li>门禁系统AccessControl</li>
+        <li>拍照花屏的排查</li>
+        <li>拍照的测试应用</li>
+      </ol>
+    </td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>10-27—12-3</td>
+    <td>
+      <ol>
+        <li>测试门禁系统</li>
+      </ol>
+    </td>
+    <td>···</td>
   </tr>
 </table>
