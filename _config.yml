@@ -78,10 +78,6 @@ markdown_it_plus:
     linkify: true
     typographer:
     quotes: “”‘’
-    plugins:
-        - plugin:
-            name: markdown-it-mark
-            enable: false
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
