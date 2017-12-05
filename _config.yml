@@ -78,6 +78,7 @@ markdown_it_plus:
     linkify: true
     typographer:
     quotes: “”‘’
+    pre_class: highlight
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
