@@ -80,6 +80,17 @@ markdown_it_plus:
     quotes: “”‘’
     pre_class: highlight
 
+marked:
+    gfm: true
+    pedantic: false
+    sanitize: false
+    tables: true
+    breaks: true
+    smartLists: true
+    smartypants: true
+    modifyAnchors: ''
+    autolink: true
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
