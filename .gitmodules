@@ -1,0 +1,3 @@
+[submodule ".deploy_aliyun"]
+	path = .deploy_aliyun
+	url = git@47.94.141.225:/home/git/blog/blog.git
