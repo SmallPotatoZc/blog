@@ -4,7 +4,7 @@ cp -r ./.deploy/* .deploy_aliyun/
 cp -r ./public/* .deploy_aliyun/
 git add .
 git commit -m 'self publish finish'
-cd .deploy_aliyun;git add .
-cd .deploy_aliyun;git commit -m 'self publish finish'
+cd .deploy_aliyun && git add .
+cd .deploy_aliyun && git commit -m 'self publish finish'
 echo $(pwd)
 git push --recurse-submodules=on-demand
