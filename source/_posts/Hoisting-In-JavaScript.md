@@ -35,3 +35,5 @@ var b ; b 在 hoist() 的scope中
 不能在hoist()之外打印b
 */
 ```
+# 变量声明
+## ES5(var)
