@@ -1,4 +1,4 @@
-# Head info
+# Head info(头部信息)
 head:
     favicon: "/img/chao.ico"
     high_res_favicon: "/img/chao.ico"
@@ -24,7 +24,6 @@ url:
 
 # Schemes - Nexus Paradox Isolation
 scheme: Paradox
-#scheme: Isolation
 
 # UI & UX: slogan, color, effect
 uiux:

@@ -22,3 +22,6 @@ github和aliyun
 
 1. 建立aliyun的子模块
 > git submodule add git@47.94.141.225:/home/git/blog/blog.git .deploy_aliyun
+
+# hexo使用
+## hexo配置文件(_config.yml)
