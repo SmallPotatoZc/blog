@@ -3,6 +3,10 @@ title: interview-js
 date: 2018-01-10 09:34:18
 tags: 面试
 ---
+# 文章来源
+> [JavaScript 权威面试指南]()
+# 类型及其转换
+
 # 基础知识
 1. JavaScript 中 this 是如何工作的
 ```js
