@@ -349,7 +349,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#文章来源"><span class="post-toc-number">1.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x6587;&#x7AE0;&#x6765;&#x6E90;"></a> &#x6587;&#x7AE0;&#x6765;&#x6E90;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#类型及其转换"><span class="post-toc-number">2.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x7C7B;&#x578B;&#x53CA;&#x5176;&#x8F6C;&#x6362;"></a> &#x7C7B;&#x578B;&#x53CA;&#x5176;&#x8F6C;&#x6362;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#基础知识"><span class="post-toc-number">3.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x57FA;&#x7840;&#x77E5;&#x8BC6;"></a> &#x57FA;&#x7840;&#x77E5;&#x8BC6;</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#文章来源"><span class="post-toc-number">1.</span> <span class="post-toc-text"><a href="#&#x6587;&#x7AE0;&#x6765;&#x6E90;" class="headerlink" title="&#x6587;&#x7AE0;&#x6765;&#x6E90;"></a>&#x6587;&#x7AE0;&#x6765;&#x6E90;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#类型及其转换"><span class="post-toc-number">2.</span> <span class="post-toc-text"><a href="#&#x7C7B;&#x578B;&#x53CA;&#x5176;&#x8F6C;&#x6362;" class="headerlink" title="&#x7C7B;&#x578B;&#x53CA;&#x5176;&#x8F6C;&#x6362;"></a>&#x7C7B;&#x578B;&#x53CA;&#x5176;&#x8F6C;&#x6362;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#基础知识"><span class="post-toc-number">3.</span> <span class="post-toc-text"><a href="#&#x57FA;&#x7840;&#x77E5;&#x8BC6;" class="headerlink" title="&#x57FA;&#x7840;&#x77E5;&#x8BC6;"></a>&#x57FA;&#x7840;&#x77E5;&#x8BC6;</span></a></li></ol>
     </ul>
     
 
@@ -491,30 +491,13 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="文章来源"><a class="markdownIt-Anchor" href="#文章来源"></a> 文章来源</h1>
-<blockquote>
+        <h1 id="文章来源"><a href="#文章来源" class="headerlink" title="文章来源"></a>文章来源</h1><blockquote>
 <p><a href="">JavaScript 权威面试指南</a></p>
-</blockquote>
-<h1 id="类型及其转换"><a class="markdownIt-Anchor" href="#类型及其转换"></a> 类型及其转换</h1>
-<h1 id="基础知识"><a class="markdownIt-Anchor" href="#基础知识"></a> 基础知识</h1>
-<ol>
-<li>JavaScript 中 this 是如何工作的</li>
+<h1 id="类型及其转换"><a href="#类型及其转换" class="headerlink" title="类型及其转换"></a>类型及其转换</h1></blockquote>
+<h1 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h1><ol>
+<li>JavaScript 中 this 是如何工作的<br>```js<br>var x = 0;<br>var foo = {<br>x: 1,<br>bar: {<br> x: 2,<br> baz: function() {<br>   console.log(this.x);<br> }<br>}<br>}</li>
 </ol>
-<pre class="highlight"><code class="js"><span class="keyword">var</span> x = <span class="number">0</span>;
-<span class="keyword">var</span> foo = {
-  <span class="attr">x</span>: <span class="number">1</span>,
-  <span class="attr">bar</span>: {
-    <span class="attr">x</span>: <span class="number">2</span>,
-    <span class="attr">baz</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{
-      <span class="built_in">console</span>.log(<span class="keyword">this</span>.x);
-    }
-  }
-}
-
-<span class="keyword">var</span> a = foo.bar.baz;
-foo.bar.baz(); <span class="comment">// 2</span>
-a(); <span class="comment">// 0</span>
-</code></pre>
+<p>var a = foo.bar.baz;<br>foo.bar.baz(); // 2<br>a(); // 0<br>```</p>
 <ul>
 <li>函数调用的位置会决定this的绑定</li>
 </ul>

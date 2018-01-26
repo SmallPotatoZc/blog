@@ -349,7 +349,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#静态类型"><span class="post-toc-number">1.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x9759;&#x6001;&#x7C7B;&#x578B;"></a> &#x9759;&#x6001;&#x7C7B;&#x578B;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#接口"><span class="post-toc-number">2.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x63A5;&#x53E3;"></a> &#x63A5;&#x53E3;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#类"><span class="post-toc-number">3.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x7C7B;"></a> &#x7C7B;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#泛型"><span class="post-toc-number">4.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x6CDB;&#x578B;"></a> &#x6CDB;&#x578B;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#模块"><span class="post-toc-number">5.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x6A21;&#x5757;"></a> &#x6A21;&#x5757;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#第三方声明文件"><span class="post-toc-number">6.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x7B2C;&#x4E09;&#x65B9;&#x58F0;&#x660E;&#x6587;&#x4EF6;"></a> &#x7B2C;&#x4E09;&#x65B9;&#x58F0;&#x660E;&#x6587;&#x4EF6;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#总结"><span class="post-toc-number">7.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x603B;&#x7ED3;"></a> &#x603B;&#x7ED3;</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#静态类型"><span class="post-toc-number">1.</span> <span class="post-toc-text"><a href="#&#x9759;&#x6001;&#x7C7B;&#x578B;" class="headerlink" title="&#x9759;&#x6001;&#x7C7B;&#x578B;"></a>&#x9759;&#x6001;&#x7C7B;&#x578B;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#接口"><span class="post-toc-number">2.</span> <span class="post-toc-text"><a href="#&#x63A5;&#x53E3;" class="headerlink" title="&#x63A5;&#x53E3;"></a>&#x63A5;&#x53E3;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#类"><span class="post-toc-number">3.</span> <span class="post-toc-text"><a href="#&#x7C7B;" class="headerlink" title="&#x7C7B;"></a>&#x7C7B;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#泛型"><span class="post-toc-number">4.</span> <span class="post-toc-text"><a href="#&#x6CDB;&#x578B;" class="headerlink" title="&#x6CDB;&#x578B;"></a>&#x6CDB;&#x578B;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#模块"><span class="post-toc-number">5.</span> <span class="post-toc-text"><a href="#&#x6A21;&#x5757;" class="headerlink" title="&#x6A21;&#x5757;"></a>&#x6A21;&#x5757;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#第三方声明文件"><span class="post-toc-number">6.</span> <span class="post-toc-text"><a href="#&#x7B2C;&#x4E09;&#x65B9;&#x58F0;&#x660E;&#x6587;&#x4EF6;" class="headerlink" title="&#x7B2C;&#x4E09;&#x65B9;&#x58F0;&#x660E;&#x6587;&#x4EF6;"></a>&#x7B2C;&#x4E09;&#x65B9;&#x58F0;&#x660E;&#x6587;&#x4EF6;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#总结"><span class="post-toc-number">7.</span> <span class="post-toc-text"><a href="#&#x603B;&#x7ED3;" class="headerlink" title="&#x603B;&#x7ED3;"></a>&#x603B;&#x7ED3;</span></a></li></ol>
     </ul>
     
 
@@ -493,51 +493,50 @@
 <li>TypeScript 编译成 JavaScript 有复杂的步骤，这可以在运行代码前捕获各种类型的错误。</li>
 <li>这 Angular2 采用 TypeScript，它告诉我们使用在项目中使用这个语言更优。</li>
 </ul>
-<h1 id="静态类型"><a class="markdownIt-Anchor" href="#静态类型"></a> 静态类型</h1>
-<p>一个非常独特的功能是 TypeScript 支持静态类型。着意味着你可以为变量指明类型，并且编译器会确保它们会被赋予正确类型的值。如果变量没有被指明类型，它们将会从代码中推断类型。</p>
+<h1 id="静态类型"><a href="#静态类型" class="headerlink" title="静态类型"></a>静态类型</h1><p>一个非常独特的功能是 TypeScript 支持静态类型。着意味着你可以为变量指明类型，并且编译器会确保它们会被赋予正确类型的值。如果变量没有被指明类型，它们将会从代码中推断类型。</p>
 <p>下面是一个例子。每一个变量，函数参数或者是函数的返回值在初始化时可以被定义类型：</p>
-<pre class="highlight"><code class="typescript"><span class="keyword">var</span> burger: <span class="built_in">string</span> = <span class="string">'hamburger'</span>, <span class="comment">// 字符串</span>
-    calories: <span class="built_in">number</span> = <span class="number">300</span>,  <span class="comment">// 数值</span>
-    tasty: <span class="built_in">boolean</span> = <span class="literal">true</span>; <span class="comment">// 布尔类型</span>
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token keyword">var</span> burger<span class="token punctuation">:</span> <span class="token keyword">string</span> <span class="token operator">=</span> <span class="token string">'hamburger'</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 字符串</span>
+    calories<span class="token punctuation">:</span> <span class="token keyword">number</span> <span class="token operator">=</span> <span class="token number">300</span><span class="token punctuation">,</span>  <span class="token comment" spellcheck="true">// 数值</span>
+    tasty<span class="token punctuation">:</span> <span class="token keyword">boolean</span> <span class="token operator">=</span> <span class="token keyword">true</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 布尔类型</span>
 
-<span class="comment">// 另外，币可以忽略这个类型的声明</span>
-<span class="comment">// var burger = 'hamburger';</span>
+<span class="token comment" spellcheck="true">// 另外，币可以忽略这个类型的声明</span>
+<span class="token comment" spellcheck="true">// var burger = 'hamburger';</span>
 
-<span class="comment">// 函数期望参数是一个字符串和整型</span>
-<span class="comment">// 函数自身的类型是 void ，因为它不会返回任何值</span>
-<span class="function"><span class="keyword">function</span> <span class="title">speak</span>(<span class="params">food: <span class="built_in">string</span>, energy: <span class="built_in">number</span></span>): <span class="title">void</span> </span>{
-  <span class="built_in">console</span>.log(<span class="string">'Our '</span> + food + <span class="string">" has"</span> + energy + <span class="string">'calories'</span>);
-}
+<span class="token comment" spellcheck="true">// 函数期望参数是一个字符串和整型</span>
+<span class="token comment" spellcheck="true">// 函数自身的类型是 void ，因为它不会返回任何值</span>
+<span class="token keyword">function</span> <span class="token function">speak</span><span class="token punctuation">(</span>food<span class="token punctuation">:</span> <span class="token keyword">string</span><span class="token punctuation">,</span> energy<span class="token punctuation">:</span> <span class="token keyword">number</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Our '</span> <span class="token operator">+</span> food <span class="token operator">+</span> <span class="token string">" has"</span> <span class="token operator">+</span> energy <span class="token operator">+</span> <span class="token string">'calories'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-speak(burger, calories);
-</code></pre>
+<span class="token function">speak</span><span class="token punctuation">(</span>burger<span class="token punctuation">,</span> calories<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>因为 TypeScript 被编译成了 JavaScript ，所以之后不会看到他们是什么类型，它们会被完全移除：</p>
-<pre class="highlight"><code class="js"><span class="comment">// 上面 ts 编译成的 JavaScript 的代码</span>
-<span class="keyword">var</span> burger = <span class="string">'hamburger'</span>,
-    calories = <span class="number">300</span>,
-    tasty = <span class="literal">true</span>;
+<pre class="line-numbers language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 上面 ts 编译成的 JavaScript 的代码</span>
+<span class="token keyword">var</span> burger <span class="token operator">=</span> <span class="token string">'hamburger'</span><span class="token punctuation">,</span>
+    calories <span class="token operator">=</span> <span class="token number">300</span><span class="token punctuation">,</span>
+    tasty <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
 
-<span class="function"><span class="keyword">function</span> <span class="title">speak</span>(<span class="params">food, energy</span>) </span>{
-  <span class="built_in">console</span>.log(<span class="string">'Our '</span> + food + <span class="string">' has'</span> + energy + <span class="string">' calories'</span>);
-}
+<span class="token keyword">function</span> <span class="token function">speak</span><span class="token punctuation">(</span>food<span class="token punctuation">,</span> energy<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Our '</span> <span class="token operator">+</span> food <span class="token operator">+</span> <span class="token string">' has'</span> <span class="token operator">+</span> energy <span class="token operator">+</span> <span class="token string">' calories'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-speak(burger, calories);
-</code></pre>
+<span class="token function">speak</span><span class="token punctuation">(</span>burger<span class="token punctuation">,</span> calories<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>然而，如果我们尝试去做一些不合规范的事情，编译器<code>tsc</code>将会警告我们，在我们的代码中也会有错误提示。例如：</p>
-<pre class="highlight"><code class="typescript"><span class="comment">// 变量的类型是布尔值，但是赋予的值确实一个字符串</span>
-<span class="keyword">var</span> tasty: <span class="built_in">boolean</span> = <span class="string">"I haven't tried it yet"</span>;
-</code></pre>
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token comment" spellcheck="true">// 变量的类型是布尔值，但是赋予的值确实一个字符串</span>
+<span class="token keyword">var</span> tasty<span class="token punctuation">:</span> <span class="token keyword">boolean</span> <span class="token operator">=</span> <span class="token string">"I haven't tried it yet"</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <blockquote>
 <p>main.ts(1, 5): error TS2322: Type ‘string’ is not assignable to type ‘boolean’.</p>
 </blockquote>
 <p>如果我们在函数参数中出现上述类似的情况，也会给出警告的：</p>
-<pre class="highlight"><code class="typescript"><span class="function"><span class="keyword">function</span> <span class="title">speak</span>(<span class="params">food: <span class="built_in">string</span>, energy: <span class="built_in">number</span></span>): <span class="title">void</span> </span>{
-  <span class="built_in">console</span>.log(<span class="string">"Our "</span> + food + <span class="string">" has"</span> + energy + <span class="string">" calories"</span>);
-}
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token keyword">function</span> <span class="token function">speak</span><span class="token punctuation">(</span>food<span class="token punctuation">:</span> <span class="token keyword">string</span><span class="token punctuation">,</span> energy<span class="token punctuation">:</span> <span class="token keyword">number</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Our "</span> <span class="token operator">+</span> food <span class="token operator">+</span> <span class="token string">" has"</span> <span class="token operator">+</span> energy <span class="token operator">+</span> <span class="token string">" calories"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-<span class="comment">// 赋予参数的值不能匹配定义参数的类型</span>
-speak(<span class="string">"tripple cheesburger"</span>, <span class="string">"a ton of"</span>);
-</code></pre>
+<span class="token comment" spellcheck="true">// 赋予参数的值不能匹配定义参数的类型</span>
+<span class="token function">speak</span><span class="token punctuation">(</span><span class="token string">"tripple cheesburger"</span><span class="token punctuation">,</span> <span class="token string">"a ton of"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>main.ts(5, 30): error TS2345: Argument of type ‘string’ is not assignable to parmeter of type ‘number’.</p>
 </blockquote>
@@ -550,162 +549,156 @@ speak(<span class="string">"tripple cheesburger"</span>, <span class="string">"a
 <li>数组(Array) - 有两种声明的方法：<code>my_arr: number[]</code>或者<code>my_arr: Array&lt;number&gt;</code>。</li>
 <li>空(void) - 使用在函数没有任何值返回时。</li>
 </ul>
-<p>想看到所有类型，请点击直达<a href="http://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" rel="noopener">点我</a></p>
-<h1 id="接口"><a class="markdownIt-Anchor" href="#接口"></a> 接口</h1>
-<p>接口用来进行类型检测，即一个对象是否符合结构。通过定义接口，我们可以命名特定变量的组合，确保它们总是在一块的。当转化成 JavaScript ，接口会消失 - 它们仅有的目的就是在开发中提供帮助。</p>
+<p>想看到所有类型，请点击直达<a href="http://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" rel="noopener">点我</a> </p>
+<h1 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h1><p>接口用来进行类型检测，即一个对象是否符合结构。通过定义接口，我们可以命名特定变量的组合，确保它们总是在一块的。当转化成 JavaScript ，接口会消失 - 它们仅有的目的就是在开发中提供帮助。</p>
 <p>在下面的例子中，我们定义了一个简单的为了函数参数的类型检测：</p>
-<pre class="highlight"><code class="typescript"><span class="comment">// 下面我们定义了我们的 Food 接口，它的属性和类型。</span>
-<span class="keyword">interface</span> Food {
-  name: <span class="built_in">string</span>;
-  calories: <span class="built_in">number</span>;
-}
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token comment" spellcheck="true">// 下面我们定义了我们的 Food 接口，它的属性和类型。</span>
+<span class="token keyword">interface</span> <span class="token class-name">Food</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token keyword">string</span><span class="token punctuation">;</span>
+  calories<span class="token punctuation">:</span> <span class="token keyword">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-<span class="comment">// 我们告诉我们的函数期望到接口结构的参数</span>
-<span class="comment">// 我们可以知道我们需要的属性将要总是会得到</span>
-<span class="function"><span class="keyword">function</span> <span class="title">speak</span>(<span class="params">food: Food</span>): <span class="title">void</span> </span>{
-  <span class="built_in">console</span>.log(<span class="string">"Our "</span> + food.name + <span class="string">" has"</span> + food.calories + <span class="string">" calories"</span>);
-}
+<span class="token comment" spellcheck="true">// 我们告诉我们的函数期望到接口结构的参数</span>
+<span class="token comment" spellcheck="true">// 我们可以知道我们需要的属性将要总是会得到</span>
+<span class="token keyword">function</span> <span class="token function">speak</span><span class="token punctuation">(</span>food<span class="token punctuation">:</span> Food<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Our "</span> <span class="token operator">+</span> food<span class="token punctuation">.</span>name <span class="token operator">+</span> <span class="token string">" has"</span> <span class="token operator">+</span> food<span class="token punctuation">.</span>calories <span class="token operator">+</span> <span class="token string">" calories"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-<span class="comment">// 我们定义一个对象，这个对象将会有 Food 中定义的所有属性。</span>
-<span class="comment">// 注意类型将会自动的识别</span>
-<span class="keyword">var</span> ice_cream = {
-  name: <span class="string">"ice cream"</span>,
-  calories: <span class="number">200</span>
-}
+<span class="token comment" spellcheck="true">// 我们定义一个对象，这个对象将会有 Food 中定义的所有属性。</span>
+<span class="token comment" spellcheck="true">// 注意类型将会自动的识别</span>
+<span class="token keyword">var</span> ice_cream <span class="token operator">=</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">"ice cream"</span><span class="token punctuation">,</span>
+  calories<span class="token punctuation">:</span> <span class="token number">200</span>
+<span class="token punctuation">}</span>
 
-speak(ice_cream);
-</code></pre>
+<span class="token function">speak</span><span class="token punctuation">(</span>ice_cream<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>这个属性的顺序无关紧要。我们仅仅需要被要求的属性值能够传入并有正确的类型。如果丢失一些东西，或者是错误类型参数值，更或者属性名错误，这个编译器将要警告我们。</p>
-<pre class="highlight"><code class="typescript"><span class="keyword">interface</span> Food {
-  name: <span class="built_in">string</span>;
-  calories: <span class="built_in">number</span>;
-}
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token keyword">interface</span> <span class="token class-name">Food</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token keyword">string</span><span class="token punctuation">;</span>
+  calories<span class="token punctuation">:</span> <span class="token keyword">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-<span class="function"><span class="keyword">function</span> <span class="title">speak</span>(<span class="params">food: Food</span>): <span class="title">void</span> </span>{
-  <span class="built_in">console</span>.log(<span class="string">"Our "</span> + food.name + <span class="string">" has"</span> + food.calories + <span class="string">" grams."</span>);
-}
+<span class="token keyword">function</span> <span class="token function">speak</span><span class="token punctuation">(</span>food<span class="token punctuation">:</span> Food<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Our "</span> <span class="token operator">+</span> food<span class="token punctuation">.</span>name <span class="token operator">+</span> <span class="token string">" has"</span> <span class="token operator">+</span> food<span class="token punctuation">.</span>calories <span class="token operator">+</span> <span class="token string">" grams."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-<span class="comment">// 我们做了一个故意的错误，这个 name 被错误拼写成了 nmae。</span>
-<span class="keyword">var</span> ice_cream = {
-  nmae: <span class="string">"ice cream"</span>,
-  calories: <span class="number">200</span>
-}
+<span class="token comment" spellcheck="true">// 我们做了一个故意的错误，这个 name 被错误拼写成了 nmae。</span>
+<span class="token keyword">var</span> ice_cream <span class="token operator">=</span> <span class="token punctuation">{</span>
+  nmae<span class="token punctuation">:</span> <span class="token string">"ice cream"</span><span class="token punctuation">,</span>
+  calories<span class="token punctuation">:</span> <span class="token number">200</span>
+<span class="token punctuation">}</span>
 
-speak(ice_cream);
-</code></pre>
+<span class="token function">speak</span><span class="token punctuation">(</span>ice_cream<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
-<p>XX.ts(nn, nn): error TS2345: Argument of type <code>{nmae: string; calories: number; } is not assignable to parameter of type type 'Food'. property 'name' is missing in type '{nmae: string; calories: number; }'</code>.</p>
+<p>XX.ts(nn, nn): error TS2345: Argument of type <code>{nmae: string; calories: number; } is not assignable to parameter of type type &#39;Food&#39;. property &#39;name&#39; is missing in type &#39;{nmae: string; calories: number; }&#39;</code>.</p>
 </blockquote>
 <p>这只是一些入门的基础，所以我们没有涉及更多接口的细节。然而，这有比我们这提到的还要多的多的东西，所以我们建议你出门右转到 TypeScript 官方的文档 - <a href="http://www.typescriptlang.org/docs/handbook/interfaces.html" target="_blank" rel="noopener">interfaces</a></p>
-<h1 id="类"><a class="markdownIt-Anchor" href="#类"></a> 类</h1>
-<p>当构造有个大型的应用时，程序的面向对象成为了大多数开发者的首选，特别是在 Java 或者 c# 。TypeScript 提供类的系统和它们是相似的，包括继承，抽象类，接口实现，setters/getters，等等。</p>
+<h1 id="类"><a href="#类" class="headerlink" title="类"></a>类</h1><p>当构造有个大型的应用时，程序的面向对象成为了大多数开发者的首选，特别是在 Java 或者 c# 。TypeScript 提供类的系统和它们是相似的，包括继承，抽象类，接口实现，setters/getters，等等。</p>
 <p>在最近的 JavaScript 版本(ECMAScript 2015)中也同样提到了这一点，类可以不借助 TypeScript 直接在 JavaScript 中使用。TypeScript 和 JavaScript 中类的实现是相似的但是也略有不同，TypeScript 更加的严格。</p>
 <p>接着上述采用 Food 为主题的思路，下面是一个简单的 TypeScript 的类：</p>
-<pre class="highlight"><code class="typescript"><span class="keyword">class</span> Menu {
-  <span class="comment">// 属性</span>
-  <span class="comment">// 默认的它们都是公共的，但是也可以设置为私有的。</span>
-  items: <span class="built_in">Array</span>&lt;<span class="built_in">string</span>&gt;;
-  pages: <span class="built_in">number</span>;
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token keyword">class</span> <span class="token class-name">Menu</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// 属性</span>
+  <span class="token comment" spellcheck="true">// 默认的它们都是公共的，但是也可以设置为私有的。</span>
+  items<span class="token punctuation">:</span> <span class="token keyword">Array</span><span class="token operator">&lt;</span><span class="token keyword">string</span><span class="token operator">></span><span class="token punctuation">;</span>
+  pages<span class="token punctuation">:</span> <span class="token keyword">number</span><span class="token punctuation">;</span>
 
-  <span class="comment">// 一个明确的构造</span>
-  <span class="keyword">constructor</span>(<span class="params">item_list: <span class="built_in">Array</span>&lt;<span class="built_in">string</span>&gt;, total_pages: <span class="built_in">number</span></span>) {
-    <span class="comment">// 这个 this 关键字是强制的</span>
-    <span class="keyword">this</span>.items = item_list;
-    <span class="keyword">this</span>.pages = total_pages;
-  }
+  <span class="token comment" spellcheck="true">// 一个明确的构造</span>
+  <span class="token keyword">constructor</span><span class="token punctuation">(</span>item_list<span class="token punctuation">:</span> <span class="token keyword">Array</span><span class="token operator">&lt;</span><span class="token keyword">string</span><span class="token operator">></span><span class="token punctuation">,</span> total_pages<span class="token punctuation">:</span> <span class="token keyword">number</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 这个 this 关键字是强制的</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>items <span class="token operator">=</span> item_list<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>pages <span class="token operator">=</span> total_pages<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 
-  <span class="comment">// 方法</span>
-  list(): <span class="built_in">void</span> {
-    <span class="built_in">console</span>.log(<span class="string">"Our menu for today"</span>);
-    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="keyword">this</span>.items.length; i ++) {
-      <span class="built_in">console</span>.log(<span class="keyword">this</span>.items[i]);
-    }
-  }
-}
+  <span class="token comment" spellcheck="true">// 方法</span>
+  <span class="token function">list</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Our menu for today"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>items<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>items<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
-<span class="comment">// 实例化这个 Menu 的类</span>
-<span class="keyword">var</span> sundayMenu = <span class="keyword">new</span> Menu([<span class="string">"pancakes"</span>, <span class="string">"waffles"</span>, <span class="string">"orange juice"</span>], <span class="number">1</span>);
+<span class="token comment" spellcheck="true">// 实例化这个 Menu 的类</span>
+<span class="token keyword">var</span> sundayMenu <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Menu</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">"pancakes"</span><span class="token punctuation">,</span> <span class="token string">"waffles"</span><span class="token punctuation">,</span> <span class="token string">"orange juice"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-<span class="comment">// 调用这个实例的方法</span>
-sundayMenu.list();
-</code></pre>
+<span class="token comment" spellcheck="true">// 调用这个实例的方法</span>
+sundayMenu<span class="token punctuation">.</span><span class="token function">list</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>任何一个最近在写 Java 或者 C# 的人都应该发现这个语法是很相似的。这个相同体现在继承上：</p>
-<pre class="highlight"><code class="typescript"><span class="keyword">class</span> HappyMeal <span class="keyword">extends</span> Menu {
-  <span class="comment">// 属性被继承</span>
-  
-  <span class="comment">// 一个新的构造必须被定义</span>
-  <span class="keyword">constructor</span>(<span class="params">item_list: <span class="built_in">Array</span>&lt;<span class="built_in">string</span>&gt;, total_pages: <span class="built_in">number</span></span>) {
-    <span class="comment">// 在这个例子中，我们想要和父级(Menu)一样的结构</span>
-    <span class="comment">// 为了自动拷贝这个，我们可以调用 super() - 一个指向父级 constructor 的引用</span>
-    <span class="keyword">super</span>(item_list, total_pages);
-  }
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token keyword">class</span> <span class="token class-name">HappyMeal</span> <span class="token keyword">extends</span> <span class="token class-name">Menu</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// 属性被继承</span>
 
-  <span class="comment">// 就像属性，方法也会继承父级的</span>
-  <span class="comment">// 然而，我们想要覆盖父级 list() 函数，所以我们重新定义了它</span>
-  list(): <span class="built_in">void</span> {
-    <span class="built_in">console</span>.log(<span class="string">"Our special menu for children"</span>);
-    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="keyword">this</span>.items.lengthl i ++) {
-      <span class="built_in">console</span>.log(<span class="keyword">this</span>.items[i]);
-    }
-  }
-}
+  <span class="token comment" spellcheck="true">// 一个新的构造必须被定义</span>
+  <span class="token keyword">constructor</span><span class="token punctuation">(</span>item_list<span class="token punctuation">:</span> <span class="token keyword">Array</span><span class="token operator">&lt;</span><span class="token keyword">string</span><span class="token operator">></span><span class="token punctuation">,</span> total_pages<span class="token punctuation">:</span> <span class="token keyword">number</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 在这个例子中，我们想要和父级(Menu)一样的结构</span>
+    <span class="token comment" spellcheck="true">// 为了自动拷贝这个，我们可以调用 super() - 一个指向父级 constructor 的引用</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>item_list<span class="token punctuation">,</span> total_pages<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 
-<span class="comment">// 实例化 HappyMeal 类</span>
-<span class="keyword">var</span> menu_for_children = <span class="keyword">new</span> HappyMeal([<span class="string">"candy"</span>, <span class="string">"drink"</span>, <span class="string">"toy"</span>], <span class="number">1</span>);
+  <span class="token comment" spellcheck="true">// 就像属性，方法也会继承父级的</span>
+  <span class="token comment" spellcheck="true">// 然而，我们想要覆盖父级 list() 函数，所以我们重新定义了它</span>
+  <span class="token function">list</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Our special menu for children"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>items<span class="token punctuation">.</span>lengthl i <span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>items<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
-<span class="comment">// 这次的这个日志信息将会以特殊的介绍开始</span>
-menu_for_children.list();
-</code></pre>
+<span class="token comment" spellcheck="true">// 实例化 HappyMeal 类</span>
+<span class="token keyword">var</span> menu_for_children <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HappyMeal</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">"candy"</span><span class="token punctuation">,</span> <span class="token string">"drink"</span><span class="token punctuation">,</span> <span class="token string">"toy"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// 这次的这个日志信息将会以特殊的介绍开始</span>
+menu_for_children<span class="token punctuation">.</span><span class="token function">list</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>对于在 TS 更加深层次的类，你可以读这个文档 - <a href="http://www.typescriptlang.org/docs/handbook/classes.html" target="_blank" rel="noopener">走这</a></p>
-<h1 id="泛型"><a class="markdownIt-Anchor" href="#泛型"></a> 泛型</h1>
-<p>泛型是允许函数接受各种不同类型参数的模板。用泛型来创建重复使用的组件比使用<code>any</code>类型的数据类型更加好，泛型保留了变量的类型，既有它们已有的也有它们没有的。</p>
-<pre class="highlight"><code class="typescript"><span class="comment">// 函数名字后面跟着的这个 &lt;T&gt; 是一个泛型函数</span>
-<span class="comment">// 当我们调用这个函数时，每一个 &lt;T&gt; 的实例将会被当前提供的类型所替代。</span>
+<h1 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h1><p>泛型是允许函数接受各种不同类型参数的模板。用泛型来创建重复使用的组件比使用<code>any</code>类型的数据类型更加好，泛型保留了变量的类型，既有它们已有的也有它们没有的。</p>
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token comment" spellcheck="true">// 函数名字后面跟着的这个 &lt;T> 是一个泛型函数</span>
+<span class="token comment" spellcheck="true">// 当我们调用这个函数时，每一个 &lt;T> 的实例将会被当前提供的类型所替代。</span>
 
-<span class="comment">// 接收一个类型 T 的参数，</span>
-<span class="comment">// 返回一个类型 T 的数组。</span>
+<span class="token comment" spellcheck="true">// 接收一个类型 T 的参数，</span>
+<span class="token comment" spellcheck="true">// 返回一个类型 T 的数组。</span>
 
-<span class="function"><span class="keyword">function</span> <span class="title">genericFunc</span>&lt;<span class="title">T</span>&gt;(<span class="params">argument: T</span>): <span class="title">T</span>[] </span>{
-  <span class="keyword">var</span> arratOfT: T[] = []; <span class="comment">// 创造空的类型 T 的数组。</span>
-  arrayOfT.push(<span class="built_in">arguments</span>); <span class="comment">// Push, 现在 arrayOfT = [argument]。</span>
-  <span class="keyword">return</span> arrayOfT;
-}
+<span class="token keyword">function</span> genericFunc<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token punctuation">(</span>argument<span class="token punctuation">:</span> T<span class="token punctuation">)</span><span class="token punctuation">:</span> T<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> arratOfT<span class="token punctuation">:</span> T<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 创造空的类型 T 的数组。</span>
+  arrayOfT<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>arguments<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Push, 现在 arrayOfT = [argument]。</span>
+  <span class="token keyword">return</span> arrayOfT<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-<span class="keyword">var</span> arrayFromString = genericFunc&lt;<span class="built_in">string</span>&gt;(<span class="string">"beep"</span>);
-<span class="built_in">console</span>.log(arrayFromString[<span class="number">0</span>]); <span class="comment">// "beep"</span>
-<span class="built_in">console</span>.log(<span class="keyword">typeof</span> arrayFromString[<span class="number">0</span>]); <span class="comment">// String</span>
+<span class="token keyword">var</span> arrayFromString <span class="token operator">=</span> genericFunc<span class="token operator">&lt;</span><span class="token keyword">string</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token string">"beep"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arrayFromString<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// "beep"</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> arrayFromString<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// String</span>
 
-<span class="keyword">var</span> arrayFromNumber = genericFunc(<span class="number">42</span>);
-<span class="built_in">console</span>.log(arrayFromNumber[<span class="number">0</span>]); <span class="comment">// 42</span>
-<span class="built_in">console</span>.log(<span class="keyword">typeof</span> arrayFromnumber[<span class="number">0</span>]); <span class="comment">// number</span>
-</code></pre>
+<span class="token keyword">var</span> arrayFromNumber <span class="token operator">=</span> <span class="token function">genericFunc</span><span class="token punctuation">(</span><span class="token number">42</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arrayFromNumber<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 42</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> arrayFromnumber<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// number</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>我们调用这个函数时，我们先手动设定了这个字符类型。编译器并不会得知，参数已经通过了和自动地匹配了类型，就像第二次被调用。既然不是强制的，每次提供类型是一个好的做法，这样在更加复杂的场景中编译器也不会推断正确的类型。</p>
 <p>这个 TypeScript 确实提供了一些包含泛型类的好例子，有结合接口实现的，还有等等其它的类型。你可以找到他们在这<a href="http://www.typescriptlang.org/docs/handbook/generics.html" target="_blank" rel="noopener">探寻</a></p>
-<h1 id="模块"><a class="markdownIt-Anchor" href="#模块"></a> 模块</h1>
-<p>在构建大型应用的另一个重要的概念便是模块。相比较拥有 10000 行的代码来说，把你的代码分割成很多小的可复用的组件，可以帮助你的项目有组织性和可理解。</p>
+<h1 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h1><p>在构建大型应用的另一个重要的概念便是模块。相比较拥有 10000 行的代码来说，把你的代码分割成很多小的可复用的组件，可以帮助你的项目有组织性和可理解。</p>
 <p>TypeScript 介绍了一种导入和导出模块的语法，但是不能够操作文件之间的衔接。为了能够让可扩展的模块，TS依赖第三方的模块：浏览器端的<a href="http://requirejs.org/" target="_blank" rel="noopener">require.js</a> 和 Node.js 端的<a href="https://en.wikipedia.org/wiki/CommonJS" target="_blank" rel="noopener">CommonJS</a>。让我们看一下依赖于 require.js 的 TypeScript 简单例子。</p>
 <p>我们有两个文件。一个导出一个函数，另一个导入它并调用它。</p>
 <p><strong>export.ts</strong></p>
-<pre class="highlight"><code class="typescript"><span class="keyword">var</span> sayzHi = <span class="function"><span class="keyword">function</span>(<span class="params"></span>): <span class="title">void</span> </span>{
-  <span class="built_in">console</span>.log(<span class="string">"Hello!"</span>);
-}
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token keyword">var</span> sayzHi <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-<span class="keyword">export</span> = sayHi;
-</code></pre>
+<span class="token keyword">export</span> <span class="token operator">=</span> sayHi<span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>import.ts</strong></p>
-<pre class="highlight"><code class="typescript"><span class="keyword">import</span> sayHi = <span class="built_in">require</span>(<span class="string">'./exporter'</span>);
-sayHi();
-</code></pre>
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token keyword">import</span> sayHi <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./exporter'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>现在我们需要下载 require.js 并在 <code>\&lt;script\&gt;</code> 标签中引入它 - <a href="http://requirejs.org/docs/start.html" target="_blank" rel="noopener">怎么玩看这里</a>。这个最后一步就是编译我们的两个 ts 文件了。需要增加一个额外的参数去告诉 TypeScript ，我们构建模块用的是 require.js (当然也可以参数 AMD)，而不是 CommonJS。</p>
-<pre class="highlight"><code class="bash">tsc --module amd *.ts
-</code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash">tsc --module amd *.ts
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>模块确实是复杂的和在这个教程是不涉及的。如果你想要继续了解他们请看 TS 的文档 - <a href="http://www.typescriptlang.org/docs/handbook/modules.html" target="_blank" rel="noopener">这</a></p>
-<h1 id="第三方声明文件"><a class="markdownIt-Anchor" href="#第三方声明文件"></a> 第三方声明文件</h1>
-<p>当使用之前设计的标准的 JavaScript 时，我们需要去应用一个声明文件去做 TypeScript 的兼容。声明文件有后缀 .d.ts 和包含各种关于库和它的 API 的信息。</p>
+<h1 id="第三方声明文件"><a href="#第三方声明文件" class="headerlink" title="第三方声明文件"></a>第三方声明文件</h1><p>当使用之前设计的标准的 JavaScript 时，我们需要去应用一个声明文件去做 TypeScript 的兼容。声明文件有后缀 .d.ts 和包含各种关于库和它的 API 的信息。</p>
 <p>TypeScript 声明文件通常是手动去书写的，但是如果选择的库已经有人写了这个 .d.ts 文件，那会是一个很好的机会。<a href="http://definitelytyped.org/" target="_blank" rel="noopener">DefinitelyTyped</a>是这个最大的公共知识库，包含了一千多个库。还有一个最受欢迎的 Node.js 模块，它管理的是 TypeScript 的定义，它叫 <a href="https://github.com/typings/typings" target="_blank" rel="noopener">Typings</a>。</p>
 <p>如果你需要持续写一个你自己的声明文件，点击这个<a href="http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html" target="_blank" rel="noopener">地址</a>将会帮助你开始。</p>
-<h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>
-<p>这只是对 TypeScript 基础的介绍。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>这只是对 TypeScript 基础的介绍。</p>
 
         
     
