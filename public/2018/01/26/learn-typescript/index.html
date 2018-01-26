@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.0 -->
+    <script>
+        window.materialVersion = "1.5.0"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Title -->
+    
+    <title>
+        
+            learn-typescript(译) | 
+        
+        ZhangChao
+    </title>
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="ZhangChao">
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="ZhangChao,张超,前端,SmallPotato">
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf("/*"+c+"*/")!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/chao.ico">
+    <link rel="icon" sizes="192x192" href="/img/chao.ico">
+    <link rel="apple-touch-icon" href="/img/chao.ico">
+
+    <!--iOS -->
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="ZhangChao">
+
+    <!-- Site Verification -->
+    <meta name="google-site-verification" content="googlec68a1766e99fff52" />
+    
+
+    <!-- RSS -->
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icon -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://www.zhangchao.online">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="learn-typescript(译) | ZhangChao">
+    <meta property="og:image" content="http://www.zhangchao.online/img/chao.ico" />
+    <meta property="og:description" content="">
+    
+
+    
+        <meta property="article:published_time" content="Fri Jan 26 2018 15:09:03 GMT+0800" />
+        <meta property="article:modified_time" content="Fri Jan 26 2018 15:10:09 GMT+0800" />
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:title" content="learn-typescript(译) | ZhangChao">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="http://www.zhangchao.online/img/chao.ico">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="http://www.zhangchao.online" />
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://www.zhangchao.online/2018/01/26/learn-typescript/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://www.zhangchao.online/2018/01/26/learn-typescript/index.html",
+    "headline": "learn-typescript(译)",
+    "datePublished": "Fri Jan 26 2018 15:09:03 GMT+0800",
+    "dateModified": "Fri Jan 26 2018 15:10:09 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "ZhangChao",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/zc.jpg"
+        },
+        "description": "欢迎来到小人物(张超)的空间"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "ZhangChao",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/chao.ico"
+        }
+    },
+    "keywords": "ZhangChao,张超,前端,SmallPotato",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#静态类型"><span class="post-toc-number">1.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x9759;&#x6001;&#x7C7B;&#x578B;"></a> &#x9759;&#x6001;&#x7C7B;&#x578B;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#接口"><span class="post-toc-number">2.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x63A5;&#x53E3;"></a> &#x63A5;&#x53E3;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#类"><span class="post-toc-number">3.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x7C7B;"></a> &#x7C7B;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#泛型"><span class="post-toc-number">4.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x6CDB;&#x578B;"></a> &#x6CDB;&#x578B;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#模块"><span class="post-toc-number">5.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x6A21;&#x5757;"></a> &#x6A21;&#x5757;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#第三方声明文件"><span class="post-toc-number">6.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x7B2C;&#x4E09;&#x65B9;&#x58F0;&#x660E;&#x6587;&#x4EF6;"></a> &#x7B2C;&#x4E09;&#x65B9;&#x58F0;&#x660E;&#x6587;&#x4EF6;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#总结"><span class="post-toc-number">7.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x603B;&#x7ED3;"></a> &#x603B;&#x7ED3;</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                learn-typescript(译)
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/zc.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>ZhangChao</strong>
+        <span>1月 26, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=learn-typescript(译)&url=http://www.zhangchao.online/2018/01/26/learn-typescript/index.html&pic=http://www.zhangchao.online/img/chao.ico&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=learn-typescript(译)&url=http://www.zhangchao.online/2018/01/26/learn-typescript/index.html&via=ZhangChao" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://www.zhangchao.online/2018/01/26/learn-typescript/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://www.zhangchao.online/2018/01/26/learn-typescript/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <blockquote>
+<p>原文链接<a href="https://tutorialzine.com/2016/07/learn-typescript-in-30-minutes" target="_blank" rel="noopener">Learn TypeScript In 30 Minutes</a></p>
+</blockquote>
+<p>今天我们将要看一下 TypeScript，它被设计为想要构建大型和复杂应用的会被编译成 JavaScript 的一种语言。它继承了大量像 C# 和 Java 语言里面科学的概念，是它更加的轻松和成为了自由类型的 JavaScript。</p>
+<p>从技术上说，你不必去学习 TypeScript 也会成为一位很好的开发者。然而采用 TypeScript 也会有很多的好处：</p>
+<ul>
+<li>由于这个静态类型，在 TypeScript 中的代码更加的具有可预测性，和更加容易查找漏洞。</li>
+<li>由于这个 模块、命名空间和完全的面向对象支持，可以在大型和复杂项目中更加容易组织代码。</li>
+<li>TypeScript 编译成 JavaScript 有复杂的步骤，这可以在运行代码前捕获各种类型的错误。</li>
+<li>这 Angular2 采用 TypeScript，它告诉我们使用在项目中使用这个语言更优。</li>
+</ul>
+<h1 id="静态类型"><a class="markdownIt-Anchor" href="#静态类型"></a> 静态类型</h1>
+<p>一个非常独特的功能是 TypeScript 支持静态类型。着意味着你可以为变量指明类型，并且编译器会确保它们会被赋予正确类型的值。如果变量没有被指明类型，它们将会从代码中推断类型。</p>
+<p>下面是一个例子。每一个变量，函数参数或者是函数的返回值在初始化时可以被定义类型：</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> burger: <span class="built_in">string</span> = <span class="string">'hamburger'</span>, <span class="comment">// 字符串</span></span><br><span class="line">    calories: <span class="built_in">number</span> = <span class="number">300</span>,  <span class="comment">// 数值</span></span><br><span class="line">    tasty: <span class="built_in">boolean</span> = <span class="literal">true</span>; <span class="comment">// 布尔类型</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 另外，币可以忽略这个类型的声明</span></span><br><span class="line"><span class="comment">// var burger = 'hamburger';</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数期望参数是一个字符串和整型</span></span><br><span class="line"><span class="comment">// 函数自身的类型是 void ，因为它不会返回任何值</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">speak</span>(<span class="params">food: <span class="built_in">string</span>, energy: <span class="built_in">number</span></span>): <span class="title">void</span> </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'Our '</span> + food + <span class="string">" has"</span> + energy + <span class="string">'calories'</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">speak(burger, calories);</span><br></pre></td></tr></table></figure>
+<p>因为 TypeScript 被编译成了 JavaScript ，所以之后不会看到他们是什么类型，它们会被完全移除：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 上面 ts 编译成的 JavaScript 的代码</span></span><br><span class="line"><span class="keyword">var</span> burger = <span class="string">'hamburger'</span>,</span><br><span class="line">    calories = <span class="number">300</span>,</span><br><span class="line">    tasty = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">speak</span>(<span class="params">food, energy</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'Our '</span> + food + <span class="string">' has'</span> + energy + <span class="string">' calories'</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">speak(burger, calories);</span><br></pre></td></tr></table></figure>
+<p>然而，如果我们尝试去做一些不合规范的事情，编译器<code>tsc</code>将会警告我们，在我们的代码中也会有错误提示。例如：</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 变量的类型是布尔值，但是赋予的值确实一个字符串</span></span><br><span class="line"><span class="keyword">var</span> tasty: <span class="built_in">boolean</span> = <span class="string">"I haven't tried it yet"</span>;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>main.ts(1, 5): error TS2322: Type ‘string’ is not assignable to type ‘boolean’.</p>
+</blockquote>
+<p>如果我们在函数参数中出现上述类似的情况，也会给出警告的：</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">speak</span>(<span class="params">food: <span class="built_in">string</span>, energy: <span class="built_in">number</span></span>): <span class="title">void</span> </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"Our "</span> + food + <span class="string">" has"</span> + energy + <span class="string">" calories"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 赋予参数的值不能匹配定义参数的类型</span></span><br><span class="line">speak(<span class="string">"tripple cheesburger"</span>, <span class="string">"a ton of"</span>);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>main.ts(5, 30): error TS2345: Argument of type ‘string’ is not assignable to parmeter of type ‘number’.</p>
+</blockquote>
+<p>下面是一些常用的数据类型：</p>
+<ul>
+<li>数值(number) - 所有数字通过<code>number</code>类型来定义，它包括整型，浮点型和其它的数值类型。</li>
+<li>字符(string) - 这个文本类型，就像被单引号和双引号包裹的字符串。</li>
+<li>布尔(boolean) - <code>true</code>或者<code>false</code>，使用 0 和 1 将会造成编译错误。</li>
+<li>任意(any) - 用这个类型的变量，可以被赋值字符串，数字，等等其它任何类型的值。</li>
+<li>数组(Array) - 有两种声明的方法：<code>my_arr: number[]</code>或者<code>my_arr: Array&lt;number&gt;</code>。</li>
+<li>空(void) - 使用在函数没有任何值返回时。</li>
+</ul>
+<p>想看到所有类型，请点击直达<a href="http://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" rel="noopener">点我</a></p>
+<h1 id="接口"><a class="markdownIt-Anchor" href="#接口"></a> 接口</h1>
+<p>接口用来进行类型检测，即一个对象是否符合结构。通过定义接口，我们可以命名特定变量的组合，确保它们总是在一块的。当转化成 JavaScript ，接口会消失 - 它们仅有的目的就是在开发中提供帮助。</p>
+<p>在下面的例子中，我们定义了一个简单的为了函数参数的类型检测：</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 下面我们定义了我们的 Food 接口，它的属性和类型。</span></span><br><span class="line"><span class="keyword">interface</span> Food &#123;</span><br><span class="line">  name: <span class="built_in">string</span>;</span><br><span class="line">  calories: <span class="built_in">number</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 我们告诉我们的函数期望到接口结构的参数</span></span><br><span class="line"><span class="comment">// 我们可以知道我们需要的属性将要总是会得到</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">speak</span>(<span class="params">food: Food</span>): <span class="title">void</span> </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"Our "</span> + food.name + <span class="string">" has"</span> + food.calories + <span class="string">" calories"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 我们定义一个对象，这个对象将会有 Food 中定义的所有属性。</span></span><br><span class="line"><span class="comment">// 注意类型将会自动的识别</span></span><br><span class="line"><span class="keyword">var</span> ice_cream = &#123;</span><br><span class="line">  name: <span class="string">"ice cream"</span>,</span><br><span class="line">  calories: <span class="number">200</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">speak(ice_cream);</span><br></pre></td></tr></table></figure>
+<p>这个属性的顺序无关紧要。我们仅仅需要被要求的属性值能够传入并有正确的类型。如果丢失一些东西，或者是错误类型参数值，更或者属性名错误，这个编译器将要警告我们。</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> Food &#123;</span><br><span class="line">  name: <span class="built_in">string</span>;</span><br><span class="line">  calories: <span class="built_in">number</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">speak</span>(<span class="params">food: Food</span>): <span class="title">void</span> </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"Our "</span> + food.name + <span class="string">" has"</span> + food.calories + <span class="string">" grams."</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 我们做了一个故意的错误，这个 name 被错误拼写成了 nmae。</span></span><br><span class="line"><span class="keyword">var</span> ice_cream = &#123;</span><br><span class="line">  nmae: <span class="string">"ice cream"</span>,</span><br><span class="line">  calories: <span class="number">200</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">speak(ice_cream);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>XX.ts(nn, nn): error TS2345: Argument of type <code>{nmae: string; calories: number; } is not assignable to parameter of type type 'Food'. property 'name' is missing in type '{nmae: string; calories: number; }'</code>.</p>
+</blockquote>
+<p>这只是一些入门的基础，所以我们没有涉及更多接口的细节。然而，这有比我们这提到的还要多的多的东西，所以我们建议你出门右转到 TypeScript 官方的文档 - <a href="http://www.typescriptlang.org/docs/handbook/interfaces.html" target="_blank" rel="noopener">interfaces</a></p>
+<h1 id="类"><a class="markdownIt-Anchor" href="#类"></a> 类</h1>
+<p>当构造有个大型的应用时，程序的面向对象成为了大多数开发者的首选，特别是在 Java 或者 c# 。TypeScript 提供类的系统和它们是相似的，包括继承，抽象类，接口实现，setters/getters，等等。</p>
+<p>在最近的 JavaScript 版本(ECMAScript 2015)中也同样提到了这一点，类可以不借助 TypeScript 直接在 JavaScript 中使用。TypeScript 和 JavaScript 中类的实现是相似的但是也略有不同，TypeScript 更加的严格。</p>
+<p>接着上述采用 Food 为主题的思路，下面是一个简单的 TypeScript 的类：</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> Menu &#123;</span><br><span class="line">  <span class="comment">// 属性</span></span><br><span class="line">  <span class="comment">// 默认的它们都是公共的，但是也可以设置为私有的。</span></span><br><span class="line">  items: <span class="built_in">Array</span>&lt;<span class="built_in">string</span>&gt;;</span><br><span class="line">  pages: <span class="built_in">number</span>;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 一个明确的构造</span></span><br><span class="line">  <span class="keyword">constructor</span>(<span class="params">item_list: <span class="built_in">Array</span>&lt;<span class="built_in">string</span>&gt;, total_pages: <span class="built_in">number</span></span>) &#123;</span><br><span class="line">    <span class="comment">// 这个 this 关键字是强制的</span></span><br><span class="line">    <span class="keyword">this</span>.items = item_list;</span><br><span class="line">    <span class="keyword">this</span>.pages = total_pages;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 方法</span></span><br><span class="line">  list(): <span class="built_in">void</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"Our menu for today"</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="keyword">this</span>.items.length; i ++) &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="keyword">this</span>.items[i]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 实例化这个 Menu 的类</span></span><br><span class="line"><span class="keyword">var</span> sundayMenu = <span class="keyword">new</span> Menu([<span class="string">"pancakes"</span>, <span class="string">"waffles"</span>, <span class="string">"orange juice"</span>], <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 调用这个实例的方法</span></span><br><span class="line">sundayMenu.list();</span><br></pre></td></tr></table></figure>
+<p>任何一个最近在写 Java 或者 C# 的人都应该发现这个语法是很相似的。这个相同体现在继承上：</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> HappyMeal <span class="keyword">extends</span> Menu &#123;</span><br><span class="line">  <span class="comment">// 属性被继承</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment">// 一个新的构造必须被定义</span></span><br><span class="line">  <span class="keyword">constructor</span>(<span class="params">item_list: <span class="built_in">Array</span>&lt;<span class="built_in">string</span>&gt;, total_pages: <span class="built_in">number</span></span>) &#123;</span><br><span class="line">    <span class="comment">// 在这个例子中，我们想要和父级(Menu)一样的结构</span></span><br><span class="line">    <span class="comment">// 为了自动拷贝这个，我们可以调用 super() - 一个指向父级 constructor 的引用</span></span><br><span class="line">    <span class="keyword">super</span>(item_list, total_pages);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 就像属性，方法也会继承父级的</span></span><br><span class="line">  <span class="comment">// 然而，我们想要覆盖父级 list() 函数，所以我们重新定义了它</span></span><br><span class="line">  list(): <span class="built_in">void</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"Our special menu for children"</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="keyword">this</span>.items.lengthl i ++) &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="keyword">this</span>.items[i]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 实例化 HappyMeal 类</span></span><br><span class="line"><span class="keyword">var</span> menu_for_children = <span class="keyword">new</span> HappyMeal([<span class="string">"candy"</span>, <span class="string">"drink"</span>, <span class="string">"toy"</span>], <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 这次的这个日志信息将会以特殊的介绍开始</span></span><br><span class="line">menu_for_children.list();</span><br></pre></td></tr></table></figure>
+<p>对于在 TS 更加深层次的类，你可以读这个文档 - <a href="http://www.typescriptlang.org/docs/handbook/classes.html" target="_blank" rel="noopener">走这</a></p>
+<h1 id="泛型"><a class="markdownIt-Anchor" href="#泛型"></a> 泛型</h1>
+<p>泛型是允许函数接受各种不同类型参数的模板。用泛型来创建重复使用的组件比使用<code>any</code>类型的数据类型更加好，泛型保留了变量的类型，既有它们已有的也有它们没有的。</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 函数名字后面跟着的这个 &lt;T&gt; 是一个泛型函数</span></span><br><span class="line"><span class="comment">// 当我们调用这个函数时，每一个 &lt;T&gt; 的实例将会被当前提供的类型所替代。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 接收一个类型 T 的参数，</span></span><br><span class="line"><span class="comment">// 返回一个类型 T 的数组。</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">genericFunc</span>&lt;<span class="title">T</span>&gt;(<span class="params">argument: T</span>): <span class="title">T</span>[] </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> arratOfT: T[] = []; <span class="comment">// 创造空的类型 T 的数组。</span></span><br><span class="line">  arrayOfT.push(<span class="built_in">arguments</span>); <span class="comment">// Push, 现在 arrayOfT = [argument]。</span></span><br><span class="line">  <span class="keyword">return</span> arrayOfT;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> arrayFromString = genericFunc&lt;<span class="built_in">string</span>&gt;(<span class="string">"beep"</span>);</span><br><span class="line"><span class="built_in">console</span>.log(arrayFromString[<span class="number">0</span>]); <span class="comment">// "beep"</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> arrayFromString[<span class="number">0</span>]); <span class="comment">// String</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> arrayFromNumber = genericFunc(<span class="number">42</span>);</span><br><span class="line"><span class="built_in">console</span>.log(arrayFromNumber[<span class="number">0</span>]); <span class="comment">// 42</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> arrayFromnumber[<span class="number">0</span>]); <span class="comment">// number</span></span><br></pre></td></tr></table></figure>
+<p>我们调用这个函数时，我们先手动设定了这个字符类型。编译器并不会得知，参数已经通过了和自动地匹配了类型，就像第二次被调用。既然不是强制的，每次提供类型是一个好的做法，这样在更加复杂的场景中编译器也不会推断正确的类型。</p>
+<p>这个 TypeScript 确实提供了一些包含泛型类的好例子，有结合接口实现的，还有等等其它的类型。你可以找到他们在这<a href="http://www.typescriptlang.org/docs/handbook/generics.html" target="_blank" rel="noopener">探寻</a></p>
+<h1 id="模块"><a class="markdownIt-Anchor" href="#模块"></a> 模块</h1>
+<p>在构建大型应用的另一个重要的概念便是模块。相比较拥有 10000 行的代码来说，把你的代码分割成很多小的可复用的组件，可以帮助你的项目有组织性和可理解。</p>
+<p>TypeScript 介绍了一种导入和导出模块的语法，但是不能够操作文件之间的衔接。为了能够让可扩展的模块，TS依赖第三方的模块：浏览器端的<a href="http://requirejs.org/" target="_blank" rel="noopener">require.js</a> 和 Node.js 端的<a href="https://en.wikipedia.org/wiki/CommonJS" target="_blank" rel="noopener">CommonJS</a>。让我们看一下依赖于 require.js 的 TypeScript 简单例子。</p>
+<p>我们有两个文件。一个导出一个函数，另一个导入它并调用它。</p>
+<p><strong>export.ts</strong></p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> sayzHi = <span class="function"><span class="keyword">function</span>(<span class="params"></span>): <span class="title">void</span> </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"Hello!"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> = sayHi;</span><br></pre></td></tr></table></figure>
+<p><strong>import.ts</strong></p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sayHi = <span class="built_in">require</span>(<span class="string">'./exporter'</span>);</span><br><span class="line">sayHi();</span><br></pre></td></tr></table></figure>
+<p>现在我们需要下载 require.js 并在 <code>\&lt;script\&gt;</code> 标签中引入它 - <a href="http://requirejs.org/docs/start.html" target="_blank" rel="noopener">怎么玩看这里</a>。这个最后一步就是编译我们的两个 ts 文件了。需要增加一个额外的参数去告诉 TypeScript ，我们构建模块用的是 require.js (当然也可以参数 AMD)，而不是 CommonJS。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tsc --module amd *.ts</span><br></pre></td></tr></table></figure>
+<p>模块确实是复杂的和在这个教程是不涉及的。如果你想要继续了解他们请看 TS 的文档 - <a href="http://www.typescriptlang.org/docs/handbook/modules.html" target="_blank" rel="noopener">这</a></p>
+<h1 id="第三方声明文件"><a class="markdownIt-Anchor" href="#第三方声明文件"></a> 第三方声明文件</h1>
+<p>当使用之前设计的标准的 JavaScript 时，我们需要去应用一个声明文件去做 TypeScript 的兼容。声明文件有后缀 .d.ts 和包含各种关于库和它的 API 的信息。</p>
+<p>TypeScript 声明文件通常是手动去书写的，但是如果选择的库已经有人写了这个 .d.ts 文件，那会是一个很好的机会。<a href="http://definitelytyped.org/" target="_blank" rel="noopener">DefinitelyTyped</a>是这个最大的公共知识库，包含了一千多个库。还有一个最受欢迎的 Node.js 模块，它管理的是 TypeScript 的定义，它叫 <a href="https://github.com/typings/typings" target="_blank" rel="noopener">Typings</a>。</p>
+<p>如果你需要持续写一个你自己的声明文件，点击这个<a href="http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html" target="_blank" rel="noopener">地址</a>将会帮助你开始。</p>
+<h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>
+<p>这只是对 TypeScript 基础的介绍。</p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/01/12/interview/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/zc.jpg" alt="ZhangChao's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        92.zhangchao@gmail.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/progress" title="日程表">
+                
+                    <i class="material-icons sidebar-material-icons">date_range</i>
+                
+                日程表
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>ZhangChao
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.0 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
