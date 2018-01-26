@@ -39,7 +39,7 @@ speak(burger, calories);
 
 因为 TypeScript 被编译成了 JavaScript ，所以之后不会看到他们是什么类型，它们会被完全移除：
 
-```js
+```javascript
 // 上面 ts 编译成的 JavaScript 的代码
 var burger = 'hamburger',
     calories = 300,

@@ -108,5 +108,5 @@ deploy:
 # 语法高亮
 prism_plugin:
   mode: 'preprocess' # realtime/preprocess
-  line_number: true  
-  theme: 'duotone-light'
+  line_number: true      
+  theme: 'base16-ateliersulphurpool.light'
