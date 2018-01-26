@@ -298,7 +298,8 @@
     <!-- Custom Head -->
     
 
-</head>
+<link rel="stylesheet" href="/css/prism-duotone-light.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
     
@@ -486,11 +487,32 @@
 </blockquote>
 <p>JavaScript中的变量提升</p>
 <h1 id="undefined-vs-referenceerror"><a class="markdownIt-Anchor" href="#undefined-vs-referenceerror"></a> undefined vs ReferenceError</h1>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 未声明的变量在执行时会被赋值undefined</span><br><span class="line">console.log(typeof variable); // Output: undefined</span><br><span class="line">// 在调用未赋值的变量时，会抛出ReferenceError</span><br><span class="line">console.log(variable); // Output: ReferenceError: variable is not defined</span><br></pre></td></tr></table></figure>
+<pre class="highlight"><code class="">// 未声明的变量在执行时会被赋值undefined
+console.log(typeof variable); // Output: undefined
+// 在调用未赋值的变量时，会抛出ReferenceError
+console.log(variable); // Output: ReferenceError: variable is not defined
+</code></pre>
 <h1 id="hoisting-variables变量提升"><a class="markdownIt-Anchor" href="#hoisting-variables变量提升"></a> Hoisting variables(变量提升)</h1>
 <p>JS生命周期图<br>
 <img src="/img/hoisting-variable.png" style="width:50%;"></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// 包含变量的生命和变量的初始化</span><br><span class="line">var a = 100;</span><br><span class="line"></span><br><span class="line">function hoist() &#123;</span><br><span class="line">  a = 20;</span><br><span class="line">  var b = 100;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">hoist();</span><br><span class="line"></span><br><span class="line">console.log(a); // Output: 20</span><br><span class="line"></span><br><span class="line">console.log(b); // Output: ReferenceError: b is not defined</span><br><span class="line">/*</span><br><span class="line">var b ; b 在 hoist() 的scope中</span><br><span class="line">不能在hoist()之外打印b</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
+<pre class="highlight"><code class="">// 包含变量的生命和变量的初始化
+var a = 100;
+
+function hoist() {
+  a = 20;
+  var b = 100;
+}
+
+hoist();
+
+console.log(a); // Output: 20
+
+console.log(b); // Output: ReferenceError: b is not defined
+/*
+var b ; b 在 hoist() 的scope中
+不能在hoist()之外打印b
+*/
+</code></pre>
 <h1 id="变量声明"><a class="markdownIt-Anchor" href="#变量声明"></a> 变量声明</h1>
 <h2 id="es5var"><a class="markdownIt-Anchor" href="#es5var"></a> ES5(var)</h2>
 

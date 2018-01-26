@@ -298,7 +298,8 @@
     <!-- Custom Head -->
     
 
-</head>
+<link rel="stylesheet" href="/css/prism-duotone-light.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
     
@@ -499,7 +500,21 @@
 <ol>
 <li>JavaScript 中 this 是如何工作的</li>
 </ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">var</span> foo = &#123;</span><br><span class="line">  x: <span class="number">1</span>,</span><br><span class="line">  bar: &#123;</span><br><span class="line">    x: <span class="number">2</span>,</span><br><span class="line">    baz: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="keyword">this</span>.x);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = foo.bar.baz;</span><br><span class="line">foo.bar.baz(); <span class="comment">// 2</span></span><br><span class="line">a(); <span class="comment">// 0</span></span><br></pre></td></tr></table></figure>
+<pre class="highlight"><code class="js"><span class="keyword">var</span> x = <span class="number">0</span>;
+<span class="keyword">var</span> foo = {
+  <span class="attr">x</span>: <span class="number">1</span>,
+  <span class="attr">bar</span>: {
+    <span class="attr">x</span>: <span class="number">2</span>,
+    <span class="attr">baz</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{
+      <span class="built_in">console</span>.log(<span class="keyword">this</span>.x);
+    }
+  }
+}
+
+<span class="keyword">var</span> a = foo.bar.baz;
+foo.bar.baz(); <span class="comment">// 2</span>
+a(); <span class="comment">// 0</span>
+</code></pre>
 <ul>
 <li>函数调用的位置会决定this的绑定</li>
 </ul>

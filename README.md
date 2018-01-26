@@ -25,3 +25,55 @@ github和aliyun
 
 # hexo使用
 ## hexo配置文件(_config.yml)
+
+# 额外配置
+## 语法高亮
+
+[采用的库](https://github.com/ele828/hexo-prism-plugin)
+
+主题：
+* defalut
+* coy
+* dark
+* funky
+* okaidia
+* solarizedlight
+* tomorrow
+* twilight
+* atom-dark
+* base16-ateliersulphurpool.light
+* cb
+* duotone-dark
+* duotone-earth
+* duotone-forest
+* duotone-light
+* duotone-sea
+* duotone-space
+* ghcolors
+* hopscotch
+* pojoaque
+* vs
+* xonokai
+
+支持的语言：
+
+<http://prismjs.com/#languages-list>
+
+常用：
+
+* Markdown - `markdown`
+* CSS - `css`
+* JavaScript - `javascript`
+* Markdown - `markdown`
+* Bash - `bash`
+* Batch - `batch`
+* C - `c`
+* Git - `git`
+* JSON - `json`
+* Java - `java`
+* HTTP - `http`
+* PowerShell - `powershell`
+* Python - `python`
+* TypeScript - `typescript`
+* vim - `vim`
+* YAML - `yaml`

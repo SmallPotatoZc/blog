@@ -39,7 +39,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace:
@@ -104,3 +104,9 @@ deploy:
   repo: git@github.com:SmallPotatoZc/SmallPotatoZc.git
   message: update
 #  extend_dirs: .deploy
+
+# 语法高亮
+prism_plugin:
+  mode: 'preprocess' # realtime/preprocess
+  line_number: true  
+  theme: 'duotone-light'

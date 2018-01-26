@@ -298,7 +298,8 @@
     <!-- Custom Head -->
     
 
-</head>
+<link rel="stylesheet" href="/css/prism-duotone-light.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
     
@@ -486,10 +487,17 @@
 </blockquote>
 <h1 id="javascript-中的callbacks"><a class="markdownIt-Anchor" href="#javascript-中的callbacks"></a> JavaScript 中的callbacks</h1>
 <p>在javascript中大多数的行为都是异步的。如下：loadScript(src)</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">loadScript</span>(<span class="params">src</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> script = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</span><br><span class="line">  script.src = src;</span><br><span class="line">  <span class="built_in">document</span>.head.append(script);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre class="highlight"><code class="js"><span class="function"><span class="keyword">function</span> <span class="title">loadScript</span>(<span class="params">src</span>) </span>{
+  <span class="keyword">let</span> script = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);
+  script.src = src;
+  <span class="built_in">document</span>.head.append(script);
+}
+</code></pre>
 <p>上述函数的目的是加载个新的script元素。在document增加<code>&lt;script src=&quot;...&quot;&gt;</code>后，浏览器将要加载并执行它。<br>
 我们可以向下面所示使用它：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// loads and executes</span></span><br><span class="line">loadScript(<span class="string">'/my/script.js'</span>);</span><br></pre></td></tr></table></figure>
+<pre class="highlight"><code class="js"><span class="comment">// loads and executes</span>
+loadScript(<span class="string">'/my/script.js'</span>);
+</code></pre>
 <p>这个函数被称为“asynchronous”，因为script的加载是在函数执行之后完成的。</p>
 
         

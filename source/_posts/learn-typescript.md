@@ -20,7 +20,7 @@ tags:
 
 下面是一个例子。每一个变量，函数参数或者是函数的返回值在初始化时可以被定义类型：
 
-```ts
+```typescript
 var burger: string = 'hamburger', // 字符串
     calories: number = 300,  // 数值
     tasty: boolean = true; // 布尔类型
@@ -54,7 +54,7 @@ speak(burger, calories);
 
 然而，如果我们尝试去做一些不合规范的事情，编译器`tsc`将会警告我们，在我们的代码中也会有错误提示。例如：
 
-```ts
+```typescript
 // 变量的类型是布尔值，但是赋予的值确实一个字符串
 var tasty: boolean = "I haven't tried it yet";
 ```
@@ -63,7 +63,7 @@ var tasty: boolean = "I haven't tried it yet";
 
 如果我们在函数参数中出现上述类似的情况，也会给出警告的：
 
-```ts
+```typescript
 function speak(food: string, energy: number): void {
   console.log("Our " + food + " has" + energy + " calories");
 }
@@ -90,7 +90,7 @@ speak("tripple cheesburger", "a ton of");
 
 在下面的例子中，我们定义了一个简单的为了函数参数的类型检测：
 
-```ts
+```typescript
 // 下面我们定义了我们的 Food 接口，它的属性和类型。
 interface Food {
   name: string;
@@ -115,7 +115,7 @@ speak(ice_cream);
 
 这个属性的顺序无关紧要。我们仅仅需要被要求的属性值能够传入并有正确的类型。如果丢失一些东西，或者是错误类型参数值，更或者属性名错误，这个编译器将要警告我们。
 
-```ts
+```typescript
 interface Food {
   name: string;
   calories: number;
@@ -145,7 +145,7 @@ speak(ice_cream);
 
 接着上述采用 Food 为主题的思路，下面是一个简单的 TypeScript 的类：
 
-```ts
+```typescript
 class Menu {
   // 属性
   // 默认的它们都是公共的，但是也可以设置为私有的。
@@ -177,7 +177,7 @@ sundayMenu.list();
 
 任何一个最近在写 Java 或者 C# 的人都应该发现这个语法是很相似的。这个相同体现在继承上：
 
-```ts
+```typescript
 class HappyMeal extends Menu {
   // 属性被继承
   
@@ -211,7 +211,7 @@ menu_for_children.list();
 
 泛型是允许函数接受各种不同类型参数的模板。用泛型来创建重复使用的组件比使用`any`类型的数据类型更加好，泛型保留了变量的类型，既有它们已有的也有它们没有的。
 
-```ts
+```typescript
 // 函数名字后面跟着的这个 <T> 是一个泛型函数
 // 当我们调用这个函数时，每一个 <T> 的实例将会被当前提供的类型所替代。
 
@@ -247,7 +247,7 @@ TypeScript 介绍了一种导入和导出模块的语法，但是不能够操作
 
 **export.ts**
 
-```ts
+```typescript
 var sayzHi = function(): void {
   console.log("Hello!");
 }
@@ -257,7 +257,7 @@ export = sayHi;
 
 **import.ts**
 
-```ts
+```typescript
 import sayHi = require('./exporter');
 sayHi();
 ```
