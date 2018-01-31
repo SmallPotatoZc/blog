@@ -237,7 +237,7 @@
 
     
         <meta property="article:published_time" content="Wed Jan 10 2018 09:34:18 GMT+0800" />
-        <meta property="article:modified_time" content="Tue Jan 30 2018 16:04:57 GMT+0800" />
+        <meta property="article:modified_time" content="Wed Jan 31 2018 15:52:17 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
@@ -264,7 +264,7 @@
     "mainEntityOfPage": "http://www.zhangchao.online/2018/01/10/interview-js/index.html",
     "headline": "interview-js",
     "datePublished": "Wed Jan 10 2018 09:34:18 GMT+0800",
-    "dateModified": "Tue Jan 30 2018 16:04:57 GMT+0800",
+    "dateModified": "Wed Jan 31 2018 15:52:17 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "ZhangChao",
@@ -348,7 +348,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#文章来源"><span class="post-toc-number">1.</span> <span class="post-toc-text"><a href="#&#x6587;&#x7AE0;&#x6765;&#x6E90;" class="headerlink" title="&#x6587;&#x7AE0;&#x6765;&#x6E90;"></a>&#x6587;&#x7AE0;&#x6765;&#x6E90;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#类型及其转换"><span class="post-toc-number">2.</span> <span class="post-toc-text"><a href="#&#x7C7B;&#x578B;&#x53CA;&#x5176;&#x8F6C;&#x6362;" class="headerlink" title="&#x7C7B;&#x578B;&#x53CA;&#x5176;&#x8F6C;&#x6362;"></a>&#x7C7B;&#x578B;&#x53CA;&#x5176;&#x8F6C;&#x6362;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#基础知识"><span class="post-toc-number">3.</span> <span class="post-toc-text"><a href="#&#x57FA;&#x7840;&#x77E5;&#x8BC6;" class="headerlink" title="&#x57FA;&#x7840;&#x77E5;&#x8BC6;"></a>&#x57FA;&#x7840;&#x77E5;&#x8BC6;</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#类型及其转换"><span class="post-toc-number">1.</span> <span class="post-toc-text"><a href="#&#x7C7B;&#x578B;&#x53CA;&#x5176;&#x8F6C;&#x6362;" class="headerlink" title="&#x7C7B;&#x578B;&#x53CA;&#x5176;&#x8F6C;&#x6362;"></a>&#x7C7B;&#x578B;&#x53CA;&#x5176;&#x8F6C;&#x6362;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#基础知识"><span class="post-toc-number">2.</span> <span class="post-toc-text"><a href="#&#x57FA;&#x7840;&#x77E5;&#x8BC6;" class="headerlink" title="&#x57FA;&#x7840;&#x77E5;&#x8BC6;"></a>&#x57FA;&#x7840;&#x77E5;&#x8BC6;</span></a></li></ol>
     </ul>
     
 
@@ -490,42 +490,59 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="文章来源"><a href="#文章来源" class="headerlink" title="文章来源"></a>文章来源</h1><blockquote>
+        <blockquote>
 <p><a href="">JavaScript 权威面试指南</a></p>
-<h1 id="类型及其转换"><a href="#类型及其转换" class="headerlink" title="类型及其转换"></a>类型及其转换</h1></blockquote>
-<h1 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h1><ol>
-<li>JavaScript 中 this 是如何工作的<br>```js<br>var x = 0;<br>var foo = {<br>x: 1,<br>bar: {<br> x: 2,<br> baz: function() {<br>   console.log(this.x);<br> }<br>}<br>}</li>
-</ol>
-<p>var a = foo.bar.baz;<br>foo.bar.baz(); // 2<br>a(); // 0</p>
-<pre><code>
-* 函数调用的位置会决定this的绑定
-  **this到底是什么？**
-* 隐式绑定
-  ```js
-    function Person(age){
-      this.age = age;
-      this.growOld = function(){
-          this.age ++;
-          console.log(&#39;this is %o ----- valur %s&#39;, this, this.age);    
-        }
-    }
+</blockquote>
+<h1 id="类型及其转换"><a href="#类型及其转换" class="headerlink" title="类型及其转换"></a>类型及其转换</h1><h1 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h1><ol>
+<li><p>JavaScript 中 this 是如何工作的</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> foo <span class="token operator">=</span> <span class="token punctuation">{</span>
+ x<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+ bar<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+   x<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+   baz<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
-    var person = new Person(1);
-
-    // 情况1
-    setTimeout(person.growOld, 1000);
-
-    setTimeout(function(){
-      console.log(person.age); // 输出1
-    },2000);
-    // -------- 非同时进行 --------
-    // 情况2
-    setTimeout(function(){person.growOld}, 1000);
-
-    setTimeout(function(){
-      console.log(person.age); // 输出2
-    },2000);
+<span class="token keyword">var</span> a <span class="token operator">=</span> foo<span class="token punctuation">.</span>bar<span class="token punctuation">.</span>baz<span class="token punctuation">;</span>
+foo<span class="token punctuation">.</span>bar<span class="token punctuation">.</span><span class="token function">baz</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 2</span>
+<span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 0</span>
 </code></pre>
+</li>
+</ol>
+<ul>
+<li><p>函数调用的位置会决定this的绑定<br><strong>this到底是什么？</strong></p>
+</li>
+<li><p>隐式绑定</p>
+<pre class=" language-javascript"><code class="language-javascript">  <span class="token keyword">function</span> <span class="token function">Person</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> age<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>growOld <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">++</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'this is %o ----- valur %s'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>    
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">var</span> person <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// 情况1</span>
+  <span class="token function">setTimeout</span><span class="token punctuation">(</span>person<span class="token punctuation">.</span>growOld<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>person<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 输出1</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment" spellcheck="true">// -------- 非同时进行 --------</span>
+  <span class="token comment" spellcheck="true">// 情况2</span>
+  <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>person<span class="token punctuation">.</span>growOld<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>person<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 输出2</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+</ul>
+
         
     
 
