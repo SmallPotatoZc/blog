@@ -27,5 +27,30 @@ a(); // 0
 ```
 
 * 函数调用的位置会决定this的绑定
+  **this到底是什么？**
+* 隐式绑定
+  ```js
+    function Person(age){
+      this.age = age;
+      this.growOld = function(){
+          this.age ++;
+          console.log('this is %o ----- valur %s', this, this.age);    
+        }
+    }
 
-**this到底是什么？**
+    var person = new Person(1);
+
+    // 情况1
+    setTimeout(person.growOld, 1000);
+
+    setTimeout(function(){
+      console.log(person.age); // 输出1
+    },2000);
+    // -------- 非同时进行 --------
+    // 情况2
+    setTimeout(function(){person.growOld}, 1000);
+
+    setTimeout(function(){
+      console.log(person.age); // 输出2
+    },2000);
+  ```
