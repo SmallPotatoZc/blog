@@ -37,7 +37,7 @@
     
     <title>
         
-            标签: 面试 | 
+            鼠标滑过的渐变特效（译） | 
         
         ZhangChao
     </title>
@@ -230,15 +230,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://www.zhangchao.online">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: 面试 | ZhangChao">
+    <meta property="og:title" content="鼠标滑过的渐变特效（译） | ZhangChao">
     <meta property="og:image" content="http://www.zhangchao.online/img/chao.ico" />
     <meta property="og:description" content="">
     
 
     
+        <meta property="article:published_time" content="Sun Feb 25 2018 14:23:25 GMT+0800" />
+        <meta property="article:modified_time" content="Tue Feb 27 2018 09:47:24 GMT+0800" />
+    
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="标签: 面试 | ZhangChao">
+    <meta name="twitter:title" content="鼠标滑过的渐变特效（译） | ZhangChao">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="http://www.zhangchao.online/img/chao.ico">
     <meta name="twitter:card" content="summary_large_image" />
@@ -246,13 +249,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://www.zhangchao.online/tags/面试/index.html" />
+        <link rel="canonical" href="http://www.zhangchao.online/2018/02/25/鼠标滑过的渐变特效/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://www.zhangchao.online/2018/02/25/鼠标滑过的渐变特效/index.html",
+    "headline": "鼠标滑过的渐变特效（译）",
+    "datePublished": "Sun Feb 25 2018 14:23:25 GMT+0800",
+    "dateModified": "Tue Feb 27 2018 09:47:24 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "ZhangChao",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/zc.jpg"
+        },
+        "description": "欢迎来到小人物(张超)的空间"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "ZhangChao",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/chao.ico"
+        }
+    },
+    "keywords": "ZhangChao,张超,前端,SmallPotato",
+    "description": "",
+}
+</script>
 
 
     
@@ -286,96 +319,278 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#追踪位置"><span class="post-toc-number">1.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x8FFD;&#x8E2A;&#x4F4D;&#x7F6E;"></a> &#x8FFD;&#x8E2A;&#x4F4D;&#x7F6E;</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#让渐变动起来"><span class="post-toc-number">2.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x8BA9;&#x6E10;&#x53D8;&#x52A8;&#x8D77;&#x6765;"></a> &#x8BA9;&#x6E10;&#x53D8;&#x52A8;&#x8D77;&#x6765;</span></a></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/01/10/interview-js/">interview-js</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-JavaScript 权威面试指南
-
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/01/10/interview-js/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/zc.jpg" width="44px" height="44px" alt="ZhangChao's avatar">
-            </div>
-            <div>
-                <strong>ZhangChao</strong>
-                <span>1月 10, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                鼠标滑过的渐变特效（译）
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/zc.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>ZhangChao</strong>
+        <span>2月 25, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=鼠标滑过的渐变特效（译）&url=http://www.zhangchao.online/2018/02/25/鼠标滑过的渐变特效/index.html&pic=http://www.zhangchao.online/img/chao.ico&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=鼠标滑过的渐变特效（译）&url=http://www.zhangchao.online/2018/02/25/鼠标滑过的渐变特效/index.html&via=ZhangChao" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://www.zhangchao.online/2018/02/25/鼠标滑过的渐变特效/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://www.zhangchao.online/2018/02/25/鼠标滑过的渐变特效/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <blockquote>
+<p>原文链接: <a href="https://blog.prototypr.io/stunning-hover-effects-with-css-variables-f855e7b95330" target="_blank" rel="noopener">Stunning hover effects with CSS variables</a></p>
+</blockquote>
+<h1 id="追踪位置"><a class="markdownIt-Anchor" href="#追踪位置"></a> 追踪位置</h1>
+<p>我们需要做的第一件事情就是知道鼠标的位置</p>
+<pre class="highlight"><code class="javascript">  <span class="built_in">document</span>.querySelector(<span class="string">'.button'</span>).onmousemove = <span class="function">(<span class="params">e</span>) =&gt;</span> {
+    <span class="keyword">const</span> x = e.pageX - e.target.offsetLeft;
+    <span class="keyword">const</span> y = e.pageY - e.target.offsetTop;
+
+    e.target.style.setProperty(<span class="string">'--x'</span>, <span class="string">`<span class="subst">${ x }</span>px`</span>);
+    e.target.style.setProperty(<span class="string">'--y'</span>, <span class="string">`<span class="subst">${ y }</span>px`</span>);
+  }
+</code></pre>
+<ol>
+<li>选择元素，等待鼠标通过它</li>
+<li>计算元素的相对位置</li>
+<li>在 css 变量中保存这个坐标</li>
+</ol>
+<p>只需要 9 行代码就能让你的 css 知道用户鼠标停留的位置。用这些信息实现的效果确实惊人的。让我们首先完成 css 部分…</p>
+<h1 id="让渐变动起来"><a class="markdownIt-Anchor" href="#让渐变动起来"></a> 让渐变动起来</h1>
+<p>我们现在 css 变量中保存了坐标，所以在 css 中我们可以使用它</p>
+<pre class="highlight"><code class="css"><span class="selector-class">.button</span> {
+  <span class="attribute">position</span>: relative;
+  <span class="attribute">appearance</span>: none;
+  <span class="attribute">background</span>: <span class="number">#f72359</span>;
+  <span class="attribute">padding</span>: <span class="number">1em</span> <span class="number">2em</span>;
+  <span class="attribute">border</span>: none;
+  <span class="attribute">color</span>: white;
+  <span class="attribute">font-size</span>: <span class="number">1.2em</span>;
+  <span class="attribute">cursor</span>: pointer;
+  <span class="attribute">outline</span>: none;
+  <span class="attribute">overflow</span>: hidden;
+  <span class="attribute">border-radius</span>: <span class="number">100px</span>;
+}
+<span class="selector-class">.button</span> <span class="selector-tag">span</span> {
+  <span class="attribute">position</span>: relative;
+  <span class="attribute">pointer-events</span>: none;
+}
+<span class="selector-class">.button</span><span class="selector-pseudo">::before</span> {
+  <span class="attribute">--size</span>: <span class="number">0</span>;
+  <span class="attribute">content</span>: <span class="string">''</span>;
+  <span class="attribute">position</span>: absolute;
+  <span class="attribute">left</span>: <span class="built_in">var</span>(--x);
+  <span class="attribute">top</span>: <span class="built_in">var</span>(--y);
+  <span class="attribute">width</span>: <span class="built_in">var</span>(--size);
+  <span class="attribute">height</span>: <span class="built_in">var</span>(--size);
+  <span class="attribute">background</span>: <span class="built_in">radial-gradient</span>(circle closest-side, #4405f7, transparent);
+  <span class="attribute">transform</span>: <span class="built_in">translate</span>(-50%, -50%);
+  <span class="attribute">transition</span>: width <span class="number">0.2s</span> ease, height <span class="number">0.2s</span> ease;
+}
+<span class="selector-class">.button</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::before</span> {
+  <span class="attribute">--size</span>: <span class="number">400px</span>;
+}
+</code></pre>
+<ol>
+<li>将文本内容放在 span 中，避免渐变出现在它的上面</li>
+<li>把渐变(伪元素)的高度和宽度的初始值设置为 0px ，当鼠标经过时把值提升为 400px 。并且不要忘记设置一个旋风效果的过渡</li>
+<li>使用随鼠标移动的坐标</li>
+<li>采用径向渐变的背景色，使用 closest-side 的圆。closest-side 填充整个伪元素而不会超出去</li>
+</ol>
+<blockquote>
+<p><a href="http://blog.zhangchao.online/hover-css-gradient.html" target="_blank" rel="noopener">效果链接</a></p>
+</blockquote>
+
+        
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/02/27/实用的CSS片段/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/02/08/abused-css/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -531,6 +746,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 

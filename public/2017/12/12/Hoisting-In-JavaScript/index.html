@@ -348,7 +348,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined-vs-ReferenceError"><span class="post-toc-number">1.</span> <span class="post-toc-text"><a href="#undefined-vs-ReferenceError" class="headerlink" title="undefined vs ReferenceError"></a>undefined vs ReferenceError</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Hoisting-variables-变量提升"><span class="post-toc-number">2.</span> <span class="post-toc-text"><a href="#Hoisting-variables-&#x53D8;&#x91CF;&#x63D0;&#x5347;" class="headerlink" title="Hoisting variables(&#x53D8;&#x91CF;&#x63D0;&#x5347;)"></a>Hoisting variables(&#x53D8;&#x91CF;&#x63D0;&#x5347;)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#变量声明"><span class="post-toc-number">3.</span> <span class="post-toc-text"><a href="#&#x53D8;&#x91CF;&#x58F0;&#x660E;" class="headerlink" title="&#x53D8;&#x91CF;&#x58F0;&#x660E;"></a>&#x53D8;&#x91CF;&#x58F0;&#x660E;</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ES5-var"><span class="post-toc-number">3.1.</span> <span class="post-toc-text"><a href="#ES5-var" class="headerlink" title="ES5(var)"></a>ES5(var)</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined-vs-referenceerror"><span class="post-toc-number">1.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#undefined-vs-referenceerror"></a> undefined vs ReferenceError</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#hoisting-variables变量提升"><span class="post-toc-number">2.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#hoisting-variables&#x53D8;&#x91CF;&#x63D0;&#x5347;"></a> Hoisting variables(&#x53D8;&#x91CF;&#x63D0;&#x5347;)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#变量声明"><span class="post-toc-number">3.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#&#x53D8;&#x91CF;&#x58F0;&#x660E;"></a> &#x53D8;&#x91CF;&#x58F0;&#x660E;</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#es5var"><span class="post-toc-number">3.1.</span> <span class="post-toc-text"><a class="markdownIt-Anchor" href="#es5var"></a> ES5(var)</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -485,12 +485,16 @@
 <p>文章来源：<a href="https://scotch.io/tutorials/understanding-hoisting-in-javascript#toc-order-of-precedence" target="_blank" rel="noopener">https://scotch.io/tutorials/understanding-hoisting-in-javascript#toc-order-of-precedence</a></p>
 </blockquote>
 <p>JavaScript中的变量提升</p>
-<h1 id="undefined-vs-ReferenceError"><a href="#undefined-vs-ReferenceError" class="headerlink" title="undefined vs ReferenceError"></a>undefined vs ReferenceError</h1><pre><code>// 未声明的变量在执行时会被赋值undefined
+<h1 id="undefined-vs-referenceerror"><a class="markdownIt-Anchor" href="#undefined-vs-referenceerror"></a> undefined vs ReferenceError</h1>
+<pre class="highlight"><code class="">// 未声明的变量在执行时会被赋值undefined
 console.log(typeof variable); // Output: undefined
 // 在调用未赋值的变量时，会抛出ReferenceError
 console.log(variable); // Output: ReferenceError: variable is not defined
-</code></pre><h1 id="Hoisting-variables-变量提升"><a href="#Hoisting-variables-变量提升" class="headerlink" title="Hoisting variables(变量提升)"></a>Hoisting variables(变量提升)</h1><p>JS生命周期图<br><img src="/img/hoisting-variable.png" style="width:50%;"></p>
-<pre><code>// 包含变量的生命和变量的初始化
+</code></pre>
+<h1 id="hoisting-variables变量提升"><a class="markdownIt-Anchor" href="#hoisting-variables变量提升"></a> Hoisting variables(变量提升)</h1>
+<p>JS生命周期图<br>
+<img src="/img/hoisting-variable.png" style="width:50%;"></p>
+<pre class="highlight"><code class="">// 包含变量的生命和变量的初始化
 var a = 100;
 
 function hoist() {
@@ -507,7 +511,10 @@ console.log(b); // Output: ReferenceError: b is not defined
 var b ; b 在 hoist() 的scope中
 不能在hoist()之外打印b
 */
-</code></pre><h1 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h1><h2 id="ES5-var"><a href="#ES5-var" class="headerlink" title="ES5(var)"></a>ES5(var)</h2>
+</code></pre>
+<h1 id="变量声明"><a class="markdownIt-Anchor" href="#变量声明"></a> 变量声明</h1>
+<h2 id="es5var"><a class="markdownIt-Anchor" href="#es5var"></a> ES5(var)</h2>
+
         
     
 
@@ -633,7 +640,7 @@ var b ; b 在 hoist() 的scope中
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
